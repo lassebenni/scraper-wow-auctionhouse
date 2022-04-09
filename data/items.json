@@ -1,0 +1,667 @@
+{
+  "items": [
+    {
+      "id": 6454,
+      "name": "Manual: Strong Anti-Venom",
+      "quality": { "type": "UNCOMMON", "name": "Uncommon" },
+      "level": 12,
+      "media": {
+        "id": 6454,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/6454?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "item_class": {
+        "id": 9,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/9?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Recipe"
+      },
+      "item_subclass": {
+        "id": 6,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/9/item-subclass/6?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Alchemy"
+      },
+      "inventory_type": { "type": "NON_EQUIP", "name": "Non-equippable" },
+      "purchase_price": 900,
+      "sell_price": 225,
+      "max_count": 0,
+      "is_equippable": false,
+      "is_stackable": false,
+      "preview_item": {
+        "armor": null,
+        "binding": null,
+        "durability": null,
+        "id": null,
+        "inventory_type": { "type": "NON_EQUIP", "name": "Non-equippable" },
+        "is_equippable": null,
+        "is_stackable": null,
+        "item_class": {
+          "id": 9,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/9?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Recipe"
+        },
+        "item_subclass": {
+          "id": 6,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/9/item-subclass/6?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Alchemy"
+        },
+        "item": {
+          "id": 6454,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item/6454?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "level": null,
+        "max_count": null,
+        "media": {
+          "id": 6454,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/media/item/6454?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "name": "Manual: Strong Anti-Venom",
+        "purchase_price": null,
+        "purchase_quantity": null,
+        "quality": { "type": "UNCOMMON", "name": "Uncommon" },
+        "requirements": {
+          "level": null,
+          "skill": {
+            "profession": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/profession/2485?namespace=static-9.2.0_42277-us"
+              },
+              "name": "Alchemy",
+              "id": 2485
+            },
+            "level": 1,
+            "display_string": "Requires Alchemy (1)"
+          }
+        },
+        "sell_price": {
+          "value": 225,
+          "type": null,
+          "display_strings": {
+            "header": "Sell Price:",
+            "gold": "0",
+            "silver": "2",
+            "copper": "25"
+          }
+        },
+        "stats": null,
+        "datetime": "2022-04-09T14:56:19.110820",
+        "recipe": {
+          "item": {
+            "item": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/item/6453?namespace=static-9.2.0_42277-us"
+              },
+              "id": 6453
+            },
+            "quality": { "type": "COMMON", "name": "Common" },
+            "name": "Strong Anti-Venom",
+            "media": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/media/item/6453?namespace=static-9.2.0_42277-us"
+              },
+              "id": 6453
+            },
+            "item_class": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-9.2.0_42277-us"
+              },
+              "name": "Consumable",
+              "id": 0
+            },
+            "item_subclass": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/8?namespace=static-9.2.0_42277-us"
+              },
+              "name": "Other",
+              "id": 8
+            },
+            "inventory_type": { "type": "NON_EQUIP", "name": "Non-equippable" },
+            "spells": [
+              {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/7933?namespace=static-9.2.0_42277-us"
+                  },
+                  "name": "Strong Anti-Venom",
+                  "id": 7933
+                },
+                "description": "Use: Target is cured of poisons up to level 49. (1 Min Cooldown)"
+              }
+            ],
+            "sell_price": {
+              "value": 62,
+              "display_strings": {
+                "header": "Sell Price:",
+                "gold": "0",
+                "silver": "0",
+                "copper": "62"
+              }
+            },
+            "is_subclass_hidden": true
+          },
+          "reagents": [
+            {
+              "reagent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/item/1288?namespace=static-9.2.0_42277-us"
+                },
+                "name": "Large Venom Sac",
+                "id": 1288
+              },
+              "quantity": 1
+            }
+          ],
+          "reagents_display_string": "Large Venom Sac"
+        },
+        "is_subclass_hidden": true,
+        "spells": [
+          {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/7935?namespace=static-9.2.0_42277-us"
+              },
+              "name": "Strong Anti-Venom",
+              "id": 7935
+            },
+            "description": "Use: Teaches you how to make Strong Anti-Venom."
+          }
+        ]
+      },
+      "purchase_quantity": 1,
+      "ingestion_datetime": "2022-04-09T14:56:19.114090",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/item/6454?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "description": "Teaches you how to make Strong Anti-Venom.",
+      "required_level": 0
+    },
+    {
+      "id": 2395,
+      "name": "Light Mail Boots",
+      "quality": { "type": "COMMON", "name": "Common" },
+      "level": 5,
+      "media": {
+        "id": 2395,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/2395?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "item_class": {
+        "id": 4,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Armor"
+      },
+      "item_subclass": {
+        "id": 3,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/3?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Mail"
+      },
+      "inventory_type": { "type": "FEET", "name": "Feet" },
+      "purchase_price": 375,
+      "sell_price": 75,
+      "max_count": 0,
+      "is_equippable": true,
+      "is_stackable": false,
+      "preview_item": {
+        "armor": {
+          "display": {
+            "display_string": "3 Armor",
+            "color": { "r": 255, "g": 255, "b": 255, "a": 1.0 }
+          },
+          "value": 3
+        },
+        "binding": null,
+        "durability": {
+          "value": 30,
+          "level": null,
+          "display_string": "Durability 30 / 30"
+        },
+        "id": null,
+        "inventory_type": { "type": "FEET", "name": "Feet" },
+        "is_equippable": null,
+        "is_stackable": null,
+        "item_class": {
+          "id": 4,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Armor"
+        },
+        "item_subclass": {
+          "id": 3,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/3?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Mail"
+        },
+        "item": {
+          "id": 2395,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item/2395?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "level": {
+          "value": 5,
+          "level": null,
+          "display_string": "Item Level 5"
+        },
+        "max_count": null,
+        "media": {
+          "id": 2395,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/media/item/2395?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "name": "Light Mail Boots",
+        "purchase_price": null,
+        "purchase_quantity": null,
+        "quality": { "type": "COMMON", "name": "Common" },
+        "requirements": {
+          "level": { "value": "3", "display_string": "Requires Level 3" }
+        },
+        "sell_price": {
+          "value": 98,
+          "type": null,
+          "display_strings": {
+            "header": "Sell Price:",
+            "gold": "0",
+            "silver": "0",
+            "copper": "98"
+          }
+        },
+        "stats": null,
+        "datetime": "2022-04-09T14:56:19.110820"
+      },
+      "purchase_quantity": 1,
+      "ingestion_datetime": "2022-04-09T14:56:19.114090",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/item/2395?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "required_level": 3
+    },
+    {
+      "id": 2904,
+      "name": "Daryl's Hunting Rifle",
+      "quality": { "type": "UNCOMMON", "name": "Uncommon" },
+      "level": 9,
+      "media": {
+        "id": 2904,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/2904?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "item_class": {
+        "id": 2,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Weapon"
+      },
+      "item_subclass": {
+        "id": 3,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/3?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Gun"
+      },
+      "inventory_type": { "type": "RANGEDRIGHT", "name": "Ranged" },
+      "purchase_price": 4962,
+      "sell_price": 992,
+      "max_count": 0,
+      "is_equippable": true,
+      "is_stackable": false,
+      "preview_item": {
+        "armor": null,
+        "binding": { "type": "ON_ACQUIRE", "name": "Binds when picked up" },
+        "durability": {
+          "value": 40,
+          "level": null,
+          "display_string": "Durability 40 / 40"
+        },
+        "id": null,
+        "inventory_type": { "type": "RANGEDRIGHT", "name": "Ranged" },
+        "is_equippable": null,
+        "is_stackable": null,
+        "item_class": {
+          "id": 2,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Weapon"
+        },
+        "item_subclass": {
+          "id": 3,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/3?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Gun"
+        },
+        "item": {
+          "id": 2904,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item/2904?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "level": {
+          "value": 9,
+          "level": null,
+          "display_string": "Item Level 9"
+        },
+        "max_count": null,
+        "media": {
+          "id": 2904,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/media/item/2904?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "name": "Daryl's Hunting Rifle",
+        "purchase_price": null,
+        "purchase_quantity": null,
+        "quality": { "type": "UNCOMMON", "name": "Uncommon" },
+        "requirements": null,
+        "sell_price": {
+          "value": 1427,
+          "type": null,
+          "display_strings": {
+            "header": "Sell Price:",
+            "gold": "0",
+            "silver": "14",
+            "copper": "27"
+          }
+        },
+        "stats": [
+          {
+            "value": 2,
+            "type": { "type": "AGILITY", "name": "Agility" },
+            "display": {
+              "display_string": "+2 Agility",
+              "color": { "r": 128, "g": 128, "b": 128, "a": 1.0 }
+            },
+            "is_negated": true
+          },
+          {
+            "value": 3,
+            "type": { "type": "STAMINA", "name": "Stamina" },
+            "display": {
+              "display_string": "+3 Stamina",
+              "color": { "r": 255, "g": 255, "b": 255, "a": 1.0 }
+            }
+          }
+        ],
+        "datetime": "2022-04-09T14:56:19.110820",
+        "weapon": {
+          "damage": {
+            "min_value": 2,
+            "max_value": 5,
+            "display_string": "2 - 5 Damage",
+            "damage_class": { "type": "PHYSICAL", "name": "Physical" }
+          },
+          "attack_speed": { "value": 3000, "display_string": "Speed 3.00" },
+          "dps": {
+            "value": 1.1666666,
+            "display_string": "(1.2 damage per second)"
+          }
+        }
+      },
+      "purchase_quantity": 1,
+      "ingestion_datetime": "2022-04-09T14:56:19.114090",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/item/2904?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "required_level": 0
+    },
+    {
+      "id": 15803,
+      "name": "Book of the Ancients",
+      "quality": { "type": "COMMON", "name": "Common" },
+      "level": 1,
+      "media": {
+        "id": 15803,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/15803?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "item_class": {
+        "id": 12,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/12?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Quest"
+      },
+      "item_subclass": {
+        "id": 0,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/12/item-subclass/0?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Quest"
+      },
+      "inventory_type": { "type": "NON_EQUIP", "name": "Non-equippable" },
+      "purchase_price": 0,
+      "sell_price": 0,
+      "max_count": 1,
+      "is_equippable": false,
+      "is_stackable": false,
+      "preview_item": {
+        "armor": null,
+        "binding": { "type": "QUEST", "name": "Quest Item" },
+        "durability": null,
+        "id": null,
+        "inventory_type": { "type": "NON_EQUIP", "name": "Non-equippable" },
+        "is_equippable": null,
+        "is_stackable": null,
+        "item_class": {
+          "id": 12,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/12?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Quest"
+        },
+        "item_subclass": {
+          "id": 0,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/12/item-subclass/0?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Quest"
+        },
+        "item": {
+          "id": 15803,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item/15803?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "level": null,
+        "max_count": null,
+        "media": {
+          "id": 15803,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/media/item/15803?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "name": "Book of the Ancients",
+        "purchase_price": null,
+        "purchase_quantity": null,
+        "quality": { "type": "COMMON", "name": "Common" },
+        "requirements": null,
+        "sell_price": null,
+        "stats": null,
+        "datetime": "2022-04-09T14:56:19.110820",
+        "unique_equipped": "Unique",
+        "is_subclass_hidden": true
+      },
+      "purchase_quantity": 1,
+      "ingestion_datetime": "2022-04-09T14:56:19.114090",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/item/15803?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "required_level": 0
+    },
+    {
+      "id": 7543,
+      "name": "Champion's Pauldrons",
+      "quality": { "type": "UNCOMMON", "name": "Uncommon" },
+      "level": 25,
+      "media": {
+        "id": 7543,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/7543?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "item_class": {
+        "id": 4,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Armor"
+      },
+      "item_subclass": {
+        "id": 3,
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/3?namespace=static-9.2.0_42277-us"
+        },
+        "name": "Mail"
+      },
+      "inventory_type": { "type": "SHOULDER", "name": "Shoulder" },
+      "purchase_price": 1066713,
+      "sell_price": 213342,
+      "max_count": 0,
+      "is_equippable": true,
+      "is_stackable": false,
+      "preview_item": {
+        "armor": {
+          "display": {
+            "display_string": "25 Armor",
+            "color": { "r": 255, "g": 255, "b": 255, "a": 1.0 }
+          },
+          "value": 25
+        },
+        "binding": { "type": "ON_EQUIP", "name": "Binds when equipped" },
+        "durability": {
+          "value": 65,
+          "level": null,
+          "display_string": "Durability 65 / 65"
+        },
+        "id": null,
+        "inventory_type": { "type": "SHOULDER", "name": "Shoulder" },
+        "is_equippable": null,
+        "is_stackable": null,
+        "item_class": {
+          "id": 4,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Armor"
+        },
+        "item_subclass": {
+          "id": 3,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/3?namespace=static-9.2.0_42277-us"
+          },
+          "name": "Mail"
+        },
+        "item": {
+          "id": 7543,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/item/7543?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "level": {
+          "value": 57,
+          "level": null,
+          "display_string": "Item Level 57"
+        },
+        "max_count": null,
+        "media": {
+          "id": 7543,
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/media/item/7543?namespace=static-9.2.0_42277-us"
+          }
+        },
+        "name": "Champion's Pauldrons",
+        "purchase_price": null,
+        "purchase_quantity": null,
+        "quality": { "type": "UNCOMMON", "name": "Uncommon" },
+        "requirements": {
+          "level": { "value": "18", "display_string": "Requires Level 18" }
+        },
+        "sell_price": {
+          "value": 97810,
+          "type": null,
+          "display_strings": {
+            "header": "Sell Price:",
+            "gold": "9",
+            "silver": "78",
+            "copper": "10"
+          }
+        },
+        "stats": [
+          {
+            "value": 12,
+            "type": { "type": "INTELLECT", "name": "Intellect" },
+            "display": {
+              "display_string": "+12 Intellect",
+              "color": { "r": 255, "g": 255, "b": 255, "a": 1.0 }
+            }
+          },
+          {
+            "value": 12,
+            "type": { "type": "AGILITY", "name": "Agility" },
+            "display": {
+              "display_string": "+12 Agility",
+              "color": { "r": 128, "g": 128, "b": 128, "a": 1.0 }
+            },
+            "is_negated": true
+          },
+          {
+            "value": 18,
+            "type": { "type": "STAMINA", "name": "Stamina" },
+            "display": {
+              "display_string": "+18 Stamina",
+              "color": { "r": 255, "g": 255, "b": 255, "a": 1.0 }
+            }
+          }
+        ],
+        "datetime": "2022-04-09T14:56:19.110820",
+        "context": 0,
+        "bonus_list": [6654]
+      },
+      "purchase_quantity": 1,
+      "ingestion_datetime": "2022-04-09T14:56:19.114090",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/item/7543?namespace=static-9.2.0_42277-us"
+        }
+      },
+      "required_level": 18
+    }
+  ]
+}
+{"items": [{"id": 8628, "name": "Reins of the Spotted Nightsaber", "quality": {"type": "COMMON", "name": "Common"}, "level": 10, "media": {"id": 8628, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/8628?namespace=static-9.2.0_42277-us"}}, "item_class": {"id": 15, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15?namespace=static-9.2.0_42277-us"}, "name": "Miscellaneous"}, "item_subclass": {"id": 5, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15/item-subclass/5?namespace=static-9.2.0_42277-us"}, "name": "Mount"}, "inventory_type": {"type": "NON_EQUIP", "name": "Non-equippable"}, "purchase_price": 10000, "sell_price": 2500, "max_count": 0, "is_equippable": false, "is_stackable": false, "preview_item": {"armor": null, "binding": null, "durability": null, "id": null, "inventory_type": {"type": "NON_EQUIP", "name": "Non-equippable"}, "is_equippable": null, "is_stackable": null, "item_class": {"id": 15, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15?namespace=static-9.2.0_42277-us"}, "name": "Miscellaneous"}, "item_subclass": {"id": 5, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15/item-subclass/5?namespace=static-9.2.0_42277-us"}, "name": "Mount"}, "item": {"id": 8628, "key": {"href": "https://us.api.blizzard.com/data/wow/item/8628?namespace=static-9.2.0_42277-us"}}, "level": null, "max_count": null, "media": {"id": 8628, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/8628?namespace=static-9.2.0_42277-us"}}, "name": "Reins of the Spotted Nightsaber", "purchase_price": null, "purchase_quantity": null, "quality": {"type": "COMMON", "name": "Common"}, "requirements": {"level": null, "faction": {"value": {"type": "ALLIANCE", "name": "Alliance"}, "display_string": "Alliance Only"}, "skill": {"profession": {"key": {"href": "https://us.api.blizzard.com/data/wow/profession/150?namespace=static-9.2.0_42277-us"}, "name": "Tiger Riding", "id": 150}, "level": 1, "display_string": "Requires Tiger Riding (1)"}}, "sell_price": {"value": 2500, "type": null, "display_strings": {"header": "Sell Price:", "gold": "0", "silver": "25", "copper": "0"}}, "stats": null, "datetime": "2022-04-09T15:01:25.787718", "spells": [{"spell": {"key": {"href": "https://us.api.blizzard.com/data/wow/spell/10792?namespace=static-9.2.0_42277-us"}, "name": "Spotted Panther", "id": 10792}, "description": "Use: Teaches you how to summon this mount."}]}, "purchase_quantity": 1, "ingestion_datetime": "2022-04-09T15:01:25.791102", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/item/8628?namespace=static-9.2.0_42277-us"}}, "description": "Teaches you how to summon this mount.", "required_level": 10}, {"id": 4256, "name": "Guardian Armor", "quality": {"type": "UNCOMMON", "name": "Uncommon"}, "level": 20, "media": {"id": 4256, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/4256?namespace=static-9.2.0_42277-us"}}, "item_class": {"id": 4, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"}, "name": "Armor"}, "item_subclass": {"id": 2, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/2?namespace=static-9.2.0_42277-us"}, "name": "Leather"}, "inventory_type": {"type": "CHEST", "name": "Chest"}, "purchase_price": 12755, "sell_price": 2551, "max_count": 0, "is_equippable": true, "is_stackable": false, "preview_item": {"armor": {"display": {"display_string": "7 Armor", "color": {"r": 255, "g": 255, "b": 255, "a": 1.0}}, "value": 7}, "binding": {"type": "ON_EQUIP", "name": "Binds when equipped"}, "durability": {"value": 95, "level": null, "display_string": "Durability 95 / 95"}, "id": null, "inventory_type": {"type": "CHEST", "name": "Chest"}, "is_equippable": null, "is_stackable": null, "item_class": {"id": 4, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"}, "name": "Armor"}, "item_subclass": {"id": 2, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/2?namespace=static-9.2.0_42277-us"}, "name": "Leather"}, "item": {"id": 4256, "key": {"href": "https://us.api.blizzard.com/data/wow/item/4256?namespace=static-9.2.0_42277-us"}}, "level": {"value": 20, "level": null, "display_string": "Item Level 20"}, "max_count": null, "media": {"id": 4256, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/4256?namespace=static-9.2.0_42277-us"}}, "name": "Guardian Armor", "purchase_price": null, "purchase_quantity": null, "quality": {"type": "UNCOMMON", "name": "Uncommon"}, "requirements": {"level": {"value": "13", "display_string": "Requires Level 13"}}, "sell_price": {"value": 2639, "type": null, "display_strings": {"header": "Sell Price:", "gold": "0", "silver": "26", "copper": "39"}}, "stats": [{"value": 5, "type": {"type": "INTELLECT", "name": "Intellect"}, "display": {"display_string": "+5 Intellect", "color": {"r": 255, "g": 255, "b": 255, "a": 1.0}}}, {"value": 5, "type": {"type": "AGILITY", "name": "Agility"}, "display": {"display_string": "+5 Agility", "color": {"r": 128, "g": 128, "b": 128, "a": 1.0}}, "is_negated": true}, {"value": 6, "type": {"type": "STAMINA", "name": "Stamina"}, "display": {"display_string": "+6 Stamina", "color": {"r": 255, "g": 255, "b": 255, "a": 1.0}}}], "datetime": "2022-04-09T15:01:25.787718"}, "purchase_quantity": 1, "ingestion_datetime": "2022-04-09T15:01:25.791102", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/item/4256?namespace=static-9.2.0_42277-us"}}, "required_level": 13}, {"id": 11744, "name": "Bloodfist", "quality": {"type": "RARE", "name": "Rare"}, "level": 28, "media": {"id": 11744, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/11744?namespace=static-9.2.0_42277-us"}}, "item_class": {"id": 2, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-9.2.0_42277-us"}, "name": "Weapon"}, "item_subclass": {"id": 13, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/13?namespace=static-9.2.0_42277-us"}, "name": "Fist Weapon"}, "inventory_type": {"type": "WEAPON", "name": "One-Hand"}, "purchase_price": 70908, "sell_price": 14181, "max_count": 0, "is_equippable": true, "is_stackable": false, "preview_item": {"armor": null, "binding": {"type": "ON_ACQUIRE", "name": "Binds when picked up"}, "durability": {"value": 60, "level": null, "display_string": "Durability 60 / 60"}, "id": null, "inventory_type": {"type": "WEAPON", "name": "One-Hand"}, "is_equippable": null, "is_stackable": null, "item_class": {"id": 2, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-9.2.0_42277-us"}, "name": "Weapon"}, "item_subclass": {"id": 13, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/13?namespace=static-9.2.0_42277-us"}, "name": "Fist Weapon"}, "item": {"id": 11744, "key": {"href": "https://us.api.blizzard.com/data/wow/item/11744?namespace=static-9.2.0_42277-us"}}, "level": {"value": 57, "level": null, "display_string": "Item Level 57"}, "max_count": null, "media": {"id": 11744, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/11744?namespace=static-9.2.0_42277-us"}}, "name": "Bloodfist", "purchase_price": null, "purchase_quantity": null, "quality": {"type": "RARE", "name": "Rare"}, "requirements": {"level": {"value": "22", "display_string": "Requires Level 22"}}, "sell_price": {"value": 227538, "type": null, "display_strings": {"header": "Sell Price:", "gold": "22", "silver": "75", "copper": "38"}}, "stats": [{"value": 8, "type": {"type": "AGILITY", "name": "Agility"}, "display": {"display_string": "+8 Agility", "color": {"r": 128, "g": 128, "b": 128, "a": 1.0}}, "is_negated": true}, {"value": 12, "type": {"type": "STAMINA", "name": "Stamina"}, "display": {"display_string": "+12 Stamina", "color": {"r": 255, "g": 255, "b": 255, "a": 1.0}}}], "datetime": "2022-04-09T15:01:25.787718", "context": 0, "bonus_list": [6710], "spells": [{"spell": {"key": {"href": "https://us.api.blizzard.com/data/wow/spell/248257?namespace=static-9.2.0_42277-us"}, "name": "Bloodfist", "id": 248257}, "description": "Equip: Your melee attacks have a chance to wound the target for 248 Physical damage."}], "weapon": {"damage": {"min_value": 19, "max_value": 28, "display_string": "19 - 28 Damage", "damage_class": {"type": "PHYSICAL", "name": "Physical"}}, "attack_speed": {"value": 2600, "display_string": "Speed 2.60"}, "dps": {"value": 9.038461, "display_string": "(9.0 damage per second)"}}}, "purchase_quantity": 1, "ingestion_datetime": "2022-04-09T15:01:25.791102", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/item/11744?namespace=static-9.2.0_42277-us"}}, "required_level": 22}, {"id": 777, "name": "Prowler Teeth", "quality": {"type": "POOR", "name": "Poor"}, "level": 1, "media": {"id": 777, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/777?namespace=static-9.2.0_42277-us"}}, "item_class": {"id": 15, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15?namespace=static-9.2.0_42277-us"}, "name": "Miscellaneous"}, "item_subclass": {"id": 0, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15/item-subclass/0?namespace=static-9.2.0_42277-us"}, "name": "Junk"}, "inventory_type": {"type": "NON_EQUIP", "name": "Non-equippable"}, "purchase_price": 86, "sell_price": 21, "max_count": 0, "is_equippable": false, "is_stackable": true, "preview_item": {"armor": null, "binding": null, "durability": null, "id": null, "inventory_type": {"type": "NON_EQUIP", "name": "Non-equippable"}, "is_equippable": null, "is_stackable": null, "item_class": {"id": 15, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15?namespace=static-9.2.0_42277-us"}, "name": "Miscellaneous"}, "item_subclass": {"id": 0, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/15/item-subclass/0?namespace=static-9.2.0_42277-us"}, "name": "Junk"}, "item": {"id": 777, "key": {"href": "https://us.api.blizzard.com/data/wow/item/777?namespace=static-9.2.0_42277-us"}}, "level": null, "max_count": null, "media": {"id": 777, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/777?namespace=static-9.2.0_42277-us"}}, "name": "Prowler Teeth", "purchase_price": null, "purchase_quantity": null, "quality": {"type": "POOR", "name": "Poor"}, "requirements": null, "sell_price": {"value": 21, "type": null, "display_strings": {"header": "Sell Price:", "gold": "0", "silver": "0", "copper": "21"}}, "stats": null, "datetime": "2022-04-09T15:01:25.787718", "is_subclass_hidden": true}, "purchase_quantity": 1, "ingestion_datetime": "2022-04-09T15:01:25.791102", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/item/777?namespace=static-9.2.0_42277-us"}}, "required_level": 0}, {"id": 14861, "name": "Vanguard Vambraces", "quality": {"type": "UNCOMMON", "name": "Uncommon"}, "level": 27, "media": {"id": 14861, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/14861?namespace=static-9.2.0_42277-us"}}, "item_class": {"id": 4, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"}, "name": "Armor"}, "item_subclass": {"id": 4, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-9.2.0_42277-us"}, "name": "Plate"}, "inventory_type": {"type": "WRIST", "name": "Wrist"}, "purchase_price": 953013, "sell_price": 190602, "max_count": 0, "is_equippable": true, "is_stackable": false, "preview_item": {"armor": {"display": {"display_string": "27 Armor", "color": {"r": 255, "g": 255, "b": 255, "a": 1.0}}, "value": 27}, "binding": {"type": "ON_EQUIP", "name": "Binds when equipped"}, "durability": {"value": 40, "level": null, "display_string": "Durability 40 / 40"}, "id": null, "inventory_type": {"type": "WRIST", "name": "Wrist"}, "is_equippable": null, "is_stackable": null, "item_class": {"id": 4, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-9.2.0_42277-us"}, "name": "Armor"}, "item_subclass": {"id": 4, "key": {"href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-9.2.0_42277-us"}, "name": "Plate"}, "item": {"id": 14861, "key": {"href": "https://us.api.blizzard.com/data/wow/item/14861?namespace=static-9.2.0_42277-us"}}, "level": {"value": 57, "level": null, "display_string": "Item Level 57"}, "max_count": null, "media": {"id": 14861, "key": {"href": "https://us.api.blizzard.com/data/wow/media/item/14861?namespace=static-9.2.0_42277-us"}}, "name": "Vanguard Vambraces", "purchase_price": null, "purchase_quantity": null, "quality": {"type": "UNCOMMON", "name": "Uncommon"}, "requirements": {"level": {"value": "20", "display_string": "Requires Level 20"}}, "sell_price": {"value": 65759, "type": null, "display_strings": {"header": "Sell Price:", "gold": "6", "silver": "57", "copper": "59"}}, "stats": [{"value": 14, "type": {"type": "STAMINA", "name": "Stamina"}, "display": {"display_string": "+14 Stamina", "color": {"r": 255, "g": 255, "b": 255, "a": 1.0}}}, {"value": 9, "type": {"type": "VERSATILITY", "name": "Versatility"}, "display": {"display_string": "+9 Versatility", "color": {"r": 0, "g": 255, "b": 0, "a": 1.0}}, "is_equip_bonus": true}], "datetime": "2022-04-09T15:01:25.787718", "context": 0, "bonus_list": [6654]}, "purchase_quantity": 1, "ingestion_datetime": "2022-04-09T15:01:25.791102", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/item/14861?namespace=static-9.2.0_42277-us"}}, "required_level": 20}]}

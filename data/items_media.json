@@ -1,0 +1,90 @@
+{
+  "media": [
+    {
+      "id": 6454,
+      "assets": [
+        {
+          "key": "icon",
+          "value": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_book_03.jpg",
+          "file_data_id": 133735
+        }
+      ],
+      "ingestion_datetime": "2022-04-09T14:56:19.117109",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/6454?namespace=static-9.2.0_42277-us"
+        }
+      }
+    },
+    {
+      "id": 2395,
+      "assets": [
+        {
+          "key": "icon",
+          "value": "https://render.worldofwarcraft.com/us/icons/56/inv_boots_01.jpg",
+          "file_data_id": 132535
+        }
+      ],
+      "ingestion_datetime": "2022-04-09T14:56:19.117109",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/2395?namespace=static-9.2.0_42277-us"
+        }
+      }
+    },
+    {
+      "id": 2904,
+      "assets": [
+        {
+          "key": "icon",
+          "value": "https://render.worldofwarcraft.com/us/icons/56/inv_weapon_rifle_03.jpg",
+          "file_data_id": 135612
+        }
+      ],
+      "ingestion_datetime": "2022-04-09T14:56:19.117109",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/2904?namespace=static-9.2.0_42277-us"
+        }
+      }
+    },
+    {
+      "id": 15803,
+      "assets": [
+        {
+          "key": "icon",
+          "value": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_book_06.jpg",
+          "file_data_id": 133738
+        }
+      ],
+      "ingestion_datetime": "2022-04-09T14:56:19.117109",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/15803?namespace=static-9.2.0_42277-us"
+        }
+      }
+    },
+    {
+      "id": 7543,
+      "assets": [
+        {
+          "key": "icon",
+          "value": "https://render.worldofwarcraft.com/us/icons/56/inv_shoulder_22.jpg",
+          "file_data_id": 135053
+        }
+      ],
+      "ingestion_datetime": "2022-04-09T14:56:19.117109",
+      "ingestion_date": "2022-04-09",
+      "_links": {
+        "self": {
+          "href": "https://us.api.blizzard.com/data/wow/media/item/7543?namespace=static-9.2.0_42277-us"
+        }
+      }
+    }
+  ]
+}
+{"media": [{"id": 8628, "assets": [{"key": "icon", "value": "https://render.worldofwarcraft.com/us/icons/56/ability_mount_blackpanther.jpg", "file_data_id": 132225}], "ingestion_datetime": "2022-04-09T15:01:25.794091", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/media/item/8628?namespace=static-9.2.0_42277-us"}}}, {"id": 4256, "assets": [{"key": "icon", "value": "https://render.worldofwarcraft.com/us/icons/56/inv_chest_leather_08.jpg", "file_data_id": 132723}], "ingestion_datetime": "2022-04-09T15:01:25.794091", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/media/item/4256?namespace=static-9.2.0_42277-us"}}}, {"id": 11744, "assets": [{"key": "icon", "value": "https://render.worldofwarcraft.com/us/icons/56/inv_gauntlets_11.jpg", "file_data_id": 132945}], "ingestion_datetime": "2022-04-09T15:01:25.794091", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/media/item/11744?namespace=static-9.2.0_42277-us"}}}, {"id": 777, "assets": [{"key": "icon", "value": "https://render.worldofwarcraft.com/us/icons/56/inv_misc_monsterfang_01.jpg", "file_data_id": 134298}], "ingestion_datetime": "2022-04-09T15:01:25.794091", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/media/item/777?namespace=static-9.2.0_42277-us"}}}, {"id": 14861, "assets": [{"key": "icon", "value": "https://render.worldofwarcraft.com/us/icons/56/inv_bracer_16.jpg", "file_data_id": 132615}], "ingestion_datetime": "2022-04-09T15:01:25.794091", "ingestion_date": "2022-04-09", "_links": {"self": {"href": "https://us.api.blizzard.com/data/wow/media/item/14861?namespace=static-9.2.0_42277-us"}}}]}
