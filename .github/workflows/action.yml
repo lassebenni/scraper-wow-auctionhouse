@@ -2,7 +2,7 @@ name: Run application wow-auction-house-scraper
 on:
   push:
   schedule:
-    - cron: "05 7 * * *" # every day at 7:05 am
+    - cron: "0 * * * *" # every hour at minute 0
 
 jobs:
   run:
@@ -28,3 +28,7 @@ jobs:
         if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/master' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BLIZZARD_ACCESS_TOKEN: ${{ secrets.BLIZZARD_ACCESS_TOKEN }}
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET}}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

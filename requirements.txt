@@ -1,2 +1,4 @@
-pydantic
-requests
+awswrangler==2.15.0
+pandas==1.4.2
+pydantic==1.9.0
+requests==2.27.1

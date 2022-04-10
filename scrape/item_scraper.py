@@ -38,6 +38,7 @@ class ItemScraper:
                 logger.info(
                     f"Error while crawling item {item_id}: {response.status_code} {response.text}"
                 )
+                return
         except Exception as e:
             logger.error(f"Error while crawling item {item_id}: {e}")
 
