@@ -7,7 +7,6 @@ def main():
     bucket = os.environ.get("AWS_S3_BUCKET")
     scraper = AuctionScraper(access_token, bucket=bucket)
     scraper.crawl()
-    scraper.crawl_items()
     scraper.write_to_s3()
 
 

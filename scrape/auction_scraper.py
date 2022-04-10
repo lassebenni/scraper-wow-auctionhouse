@@ -4,12 +4,12 @@ from time import sleep
 from typing import List
 import pandas as pd
 import requests  # type: ignore
-import json
 
 from models.auction import Lot, Lots
 from models.item import Item, Items
 from models.media import Media, Medias
 from scrape.item_scraper import ItemScraper
+from scrape.lot_scraper import LotScraper
 from scrape.media_scraper import MediaScraper
 from utils.aws import S3Connector
 from utils.utils import load_pickle, store_as_pickle
@@ -22,35 +22,14 @@ class AuctionScraper:
         self.access_token = access_token
         self.s3_connector = S3Connector(bucket)
 
-    def crawl(self) -> Lots:
-        url = f"https://us.api.blizzard.com/data/wow/connected-realm/60/auctions?namespace=dynamic-us&locale=en_US&access_token={self.access_token}"
-
-        headers = {
-            "Accept-Encoding": "gzip, deflate, br",
-            "Accept-Language": "en-US,en;q=0.5",
-            "Accept": "application/json, text/plain, */*",
-            "Connection": "keep-alive",
-            "Content-Length": "0",
-            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-            "Sec-Fetch-Dest": "empty",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Site": "same-origin",
-            "TE": "trailers",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0",
-            "X-Requested-With": "XMLHttpRequest",
-        }
-
-        logger.info("Crawling auctions.")
-        response = requests.request("GET", url, headers=headers)
-        response_json = json.loads(response.text)
-        self.lots = Lots(lots=response_json["auctions"])
+    def crawl(self, sample: int = 0):
+        lots_scraper = LotScraper(self.access_token)
+        self.lots: Lots = lots_scraper.crawl()
         logger.info(f"{len(self.lots.lots)} lots crawled..")
+
         self.item_ids = list({lot.item.id for lot in self.lots.lots})
         logger.info(f"{len(self.item_ids)} item ids found..")
 
-        logger.info(f"Written to auctions.json")
-
-    def crawl_items(self, sample: int = 0):
         previous_items_id: List[int] = load_pickle("data/item_ids.pickle")
         item_ids = [
             item_id for item_id in self.item_ids if item_id not in previous_items_id
@@ -103,13 +82,16 @@ class AuctionScraper:
             df = pd.DataFrame.from_records(self.lots.dict()["lots"])
             path = self.s3_connector.create_parquet_path("lots")
             self.s3_connector.write_parquet(df, path)
+            logger.info(f"Wrote to {path}")
 
         if self.items:
             df = pd.DataFrame.from_records(self.items.dict()["items"])
             path = self.s3_connector.create_parquet_path("items")
             self.s3_connector.write_parquet(df, path)
+            logger.info(f"Wrote to {path}")
 
         if self.medias:
             df = pd.DataFrame.from_records(self.medias.dict()["media"])
             path = self.s3_connector.create_parquet_path("medias")
             self.s3_connector.write_parquet(df, path)
+            logger.info(f"Wrote to {path}")
