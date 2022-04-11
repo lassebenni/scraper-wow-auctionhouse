@@ -31,6 +31,7 @@ class AuctionScraper:
         logger.info(f"{len(self.item_ids)} item ids found..")
 
         previous_items_id: List[int] = load_pickle("data/item_ids.pickle")
+        print(f"Previous {len(previous_items_id)} item ids found")
         item_ids = [
             item_id for item_id in self.item_ids if item_id not in previous_items_id
         ]
@@ -42,6 +43,7 @@ class AuctionScraper:
             item_ids = sample_item_ids
 
         logger.info(f"{len(item_ids)} item ids found. Crawling items..")
+        print(f"{len(item_ids)} item ids found")
 
         item_scraper = ItemScraper(self.access_token)
         media_scraper = MediaScraper(self.access_token)
@@ -61,6 +63,7 @@ class AuctionScraper:
                     handled_media.append(media)
                 previous_items_id.append(item_id)
                 logger.info(f"Item {i+1}/{len(item_ids)} crawled.")
+                print(f"Item {i+1}/{len(item_ids)} crawled.")
         except Exception as e:
             logger.error(e)
             logger.info("Storing processed item_ids.")
