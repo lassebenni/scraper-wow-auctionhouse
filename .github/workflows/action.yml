@@ -1,8 +1,8 @@
 name: Run application wow-auction-house-scraper
 on:
   push:
-  schedule:
-    - cron: "0 * * * *" # every hour at minute 0
+  #schedule:
+  #  - cron: "0 * * * *" # every hour at minute 0
 
 jobs:
   run:
