@@ -23,10 +23,17 @@ class AuctionScraper:
 
     def crawl(self, sample: int = 0):
         lots_scraper = LotScraper(self.access_token)
-        self.lots: Lots = lots_scraper.crawl()
-        logger.info(f"{len(self.lots.lots)} lots crawled..")
+        lots: Lots = lots_scraper.crawl()
 
-        self.item_ids = list({lot.item.id for lot in self.lots.lots})
+        if lots:
+            df = pd.DataFrame.from_records(lots.dict()["lots"])
+            path = self.s3_connector.create_parquet_path("lots")
+            self.s3_connector.write_parquet(df, path)
+            logger.info(f"Wrote to {path}")
+
+        logger.info(f"{len(lots.lots)} lots crawled..")
+
+        self.item_ids = list({lot.item.id for lot in lots.lots})
         logger.info(f"{len(self.item_ids)} item ids found..")
 
         scraped_item_ids: List[int] = self.read_item_ids()
@@ -65,42 +72,34 @@ class AuctionScraper:
                 print(f"Item {i+1}/{len(item_ids)} crawled.")
 
                 # write intermediate hanlded item_ids to s3 in case of failure
-                if (i + 1) % 10 == 0:
+                if (i + 1) % 100 == 0:
+                    items = Items(items=handled_items)
+                    df_items = pd.DataFrame.from_records(items.dict()["items"])
+                    self.write_to_s3(df_items, "items")
+                    medias = Medias(media=handled_media)
+                    df_media = pd.DataFrame.from_records(medias.dict()["media"])
+                    self.write_to_s3(df_media, "media")
                     self.write_item_ids(scraped_item_ids)
+
+                    # clear handled items
+                    handled_items = []
+                    handled_media = []
         except Exception as e:
             logger.error(e)
             logger.info("Storing processed item_ids.")
-            self.write_item_ids(scraped_item_ids)
 
-        self.items = Items(items=handled_items)
-        self.medias = Medias(media=handled_media)
-
-    def random_lots(self, size: int = 1) -> Lots:
+    def random_lots(self, lots: List[Lot], size: int = 1) -> Lots:
         sample_lots: List[Lot] = []
         for _ in range(size):
-            random_lot: Lot = self.lots.lots[randint(0, len(self.lots.lots))]
+            random_lot: Lot = lots[randint(0, len(lots))]
             sample_lots.append(random_lot)
 
         return sample_lots
 
-    def write_to_s3(self):
-        if self.lots:
-            df = pd.DataFrame.from_records(self.lots.dict()["lots"])
-            path = self.s3_connector.create_parquet_path("lots")
-            self.s3_connector.write_parquet(df, path)
-            logger.info(f"Wrote to {path}")
-
-        if self.items:
-            df = pd.DataFrame.from_records(self.items.dict()["items"])
-            path = self.s3_connector.create_parquet_path("items")
-            self.s3_connector.write_parquet(df, path)
-            logger.info(f"Wrote to {path}")
-
-        if self.medias:
-            df = pd.DataFrame.from_records(self.medias.dict()["media"])
-            path = self.s3_connector.create_parquet_path("medias")
-            self.s3_connector.write_parquet(df, path)
-            logger.info(f"Wrote to {path}")
+    def write_to_s3(self, df: pd.DataFrame, name: str):
+        path = self.s3_connector.create_parquet_path(name)
+        self.s3_connector.write_parquet(df, path)
+        logger.info(f"Wrote to {path}")
 
     def read_item_ids(self) -> List[int]:
         df = self.s3_connector.read_csv("item_ids.csv")
