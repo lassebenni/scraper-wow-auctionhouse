@@ -34,15 +34,13 @@ class MediaScraper:
             if response.status_code == 200:
                 response_json = json.loads(response.text)
                 media = Media(**response_json)
+                return media
             else:
                 logger.info(
                     f"Error while crawling item {item_id}: {response.status_code} {response.text}"
                 )
-                return
         except Exception as e:
             logger.error(f"Error while crawling item {item_id}: {e}")
-
-        return media
 
     def write_json(self, medias: Medias, path: str):
         with open(path, "w") as f:

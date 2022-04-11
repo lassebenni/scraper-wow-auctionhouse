@@ -34,15 +34,13 @@ class ItemScraper:
             if response.status_code == 200:
                 response_json = json.loads(response.text)
                 item = Item(**response_json)
+                return item
             else:
                 logger.info(
                     f"Error while crawling item {item_id}: {response.status_code} {response.text}"
                 )
-                return
         except Exception as e:
             logger.error(f"Error while crawling item {item_id}: {e}")
-
-        return item
 
     def write_json(self, items: Items, path: str):
         with open(path, "w") as f:
