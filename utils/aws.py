@@ -7,8 +7,15 @@ class S3Connector:
     def __init__(self, bucket: str):
         self.bucket = bucket
 
-    def write_parquet(self, df: pd.DataFrame, path: str):
+    def write_csv(self, df: pd.DataFrame, path: str):
+        wr.s3.to_csv(df=df, path=f"s3://{self.bucket}/{path}", index=False)
 
+    def read_csv(self, path: str) -> pd.DataFrame:
+        return wr.s3.read_csv(
+            path=f"s3://{self.bucket}/{path}",
+        )
+
+    def write_parquet(self, df: pd.DataFrame, path: str):
         wr.s3.to_parquet(
             df=df,
             compression="snappy",
