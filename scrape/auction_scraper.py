@@ -36,7 +36,7 @@ class AuctionScraper:
         self.item_ids = list({lot.item.id for lot in lots.lots})
         logger.info(f"{len(self.item_ids)} item ids found..")
 
-        scraped_item_ids: List[int] = self.read_item_ids()
+        scraped_item_ids: List[int] = self._read_item_ids()
         print(f"Previous {len(scraped_item_ids)} item ids found")
         item_ids = [
             item_id for item_id in self.item_ids if item_id not in scraped_item_ids
@@ -73,20 +73,34 @@ class AuctionScraper:
 
                 # write intermediate hanlded item_ids to s3 in case of failure
                 if (i + 1) % 100 == 0:
-                    items = Items(items=handled_items)
-                    df_items = pd.DataFrame.from_records(items.dict()["items"])
-                    self.write_to_s3(df_items, "items")
-                    medias = Medias(media=handled_media)
-                    df_media = pd.DataFrame.from_records(medias.dict()["media"])
-                    self.write_to_s3(df_media, "media")
-                    self.write_item_ids(scraped_item_ids)
+                    self._store(
+                        items=handled_items,
+                        media=handled_media,
+                        item_ids=scraped_item_ids,
+                    )
 
-                    # clear handled items
-                    handled_items = []
-                    handled_media = []
+            # write the final results
+            self._store(
+                items=handled_items,
+                media=handled_media,
+                item_ids=scraped_item_ids,
+            )
         except Exception as e:
             logger.error(e)
             logger.info("Storing processed item_ids.")
+
+    def _store(self, items: list[Item], media: list[Media], item_ids: list[int]):
+        items_ = Items(items=items)
+        df_items = pd.DataFrame.from_records(items_.dict()["items"])
+        self._write_to_s3(df_items, "items")
+        medias_ = Medias(media=media)
+        df_media = pd.DataFrame.from_records(medias_.dict()["media"])
+        self._write_to_s3(df_media, "media")
+        self._write_item_ids(item_ids)
+
+        # clear handled items
+        items = []
+        media = []
 
     def random_lots(self, lots: List[Lot], size: int = 1) -> Lots:
         sample_lots: List[Lot] = []
@@ -96,15 +110,15 @@ class AuctionScraper:
 
         return sample_lots
 
-    def write_to_s3(self, df: pd.DataFrame, name: str):
+    def _write_to_s3(self, df: pd.DataFrame, name: str):
         path = self.s3_connector.create_parquet_path(name)
         self.s3_connector.write_parquet(df, path)
         logger.info(f"Wrote to {path}")
 
-    def read_item_ids(self) -> List[int]:
+    def _read_item_ids(self) -> List[int]:
         df = self.s3_connector.read_csv("item_ids.csv")
         return list(df["id"].values)
 
-    def write_item_ids(self, item_ids: List[int]) -> pd.DataFrame:
+    def _write_item_ids(self, item_ids: List[int]) -> pd.DataFrame:
         df = pd.DataFrame(item_ids, columns=["id"])
         self.s3_connector.write_csv(df, "item_ids.csv")
